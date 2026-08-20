@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.ConcreteFactory.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/accent_report_glass"
+    app:strokeColor="@color/accent_report">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTypeBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:background="@drawable/bg_status_outside"
+                tools:text="گزارش تخلف"
+                tools:textColor="@color/danger_red" />
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:textColor="@color/concrete_900"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="ورود بدون مجوز" />
+
+            <TextView
+                android:id="@+id/tvTimestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/concrete_500"
+                android:textSize="11sp"
+                tools:text="1404/05/17 — 10:24" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/concrete_700"
+            android:textSize="13sp"
+            tools:text="در تاریخ ۱۴۰۴/۰۵/۱۷ آقای «رضایی» به دلیل «ورود بدون مجوز» (درجه: متوسط) مورد گزارش تخلف قرار گرفت." />
+
+        <TextView
+            android:id="@+id/tvReporter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/concrete_500"
+            android:textSize="11sp"
+            tools:text="ثبت‌کننده: نگهبان احمدی" />
+
+        <TextView
+            android:id="@+id/tvCorrectedBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/safety_amber_dark"
+            android:textSize="11sp"
+            android:visibility="gone"
+            tools:text="اصلاح شده"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
